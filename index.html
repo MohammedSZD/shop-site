@@ -1,673 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nike - Just Do It</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="image/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stride — Running &amp; Training Footwear (Frontend Demo)</title>
+  <meta name="description" content="Stride is a responsive footwear storefront concept: browse a demo collection of running, basketball, training and lifestyle shoes with search, filtering and sorting. Frontend demo only.">
+  <meta name="theme-color" content="#14161a">
+  <link rel="canonical" href="https://mohammedszd.github.io/shop-site/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Stride — Running &amp; Training Footwear (Frontend Demo)">
+  <meta property="og:description" content="A responsive footwear storefront concept with client-side search, filtering and sorting. No backend, no real orders.">
+  <meta property="og:url" content="https://mohammedszd.github.io/shop-site/">
+  <meta property="og:image" content="https://mohammedszd.github.io/shop-site/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Stride storefront concept showing a running shoe">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/img/aero-zoom.webp" type="image/webp">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <p class="demo-bar">Frontend demo concept. Products, prices and policies are illustrative and nothing here can be purchased.</p>
 
-    <section>
-        <nav>
-            <div class="logo">
-                <h1>Shoe<span>s</span></h1>
-            </div>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Stride, back to top">Stride<span aria-hidden="true">.</span></a>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#collection">Shop</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#why">Why Stride</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="saved-link" href="#collection" data-filter="saved" aria-label="Saved items: 0"><svg class="icon " viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3 4.5 6.6 4.5c2 0 3.5 1 5.4 3 1.9-2 3.4-3 5.4-3 3.6 0 5.7 3.7 4.2 7.2C19.5 16.4 12 21 12 21z"/></svg><span class="saved-count" aria-hidden="true">0</span></a>
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg class="icon i-open" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="icon i-close" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </div>
+    </div>
+  </header>
 
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Product">Product</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Review">Review</a></li>
-                <li><a href="#Servises">Servises</a></li>
-            </ul>
-
-            <div class="icons">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-user"></i>
-            </div>
-        </nav>
-
-        <div class="main" id="Home">
-            <div class="main-content">
-                <div class="main-text">
-                    <h1>NIKE <br><span>Collection</span></h1>
-                    <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.                       
-                    </P>
-                </div>
-                <div class="main-imge">
-                    <img src="./image/shoes.png" alt="shoes">
-                </div>
-            </div>
-            <div class="social-icon">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-            </div>
-        <div class="button">
-            <a href="#">SHOP NOW</a>
-            <i class="fa-solid fa-chevron-right"></i>
-            </div>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Spring demo collection</p>
+          <h1 id="hero-title">Shoes for every kind of&nbsp;run.</h1>
+          <p class="lead">Nine carefully grouped styles across running, basketball, training and lifestyle. Search, filter and sort the collection, and save your favourites.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#collection">Shop the collection <svg class="icon i-sm" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+            <a class="btn btn-secondary" href="#featured">See featured</a>
+          </div>
         </div>
+        <div class="hero-media">
+          <img src="assets/img/aero-zoom.webp" width="688" height="719" alt="Navy and volt Aero Zoom 20 running shoe" fetchpriority="high">
+        </div>
+      </div>
     </section>
 
-<!--Products-->
+    <section class="section" aria-labelledby="cats-title">
+      <div class="container">
+        <div class="section-head"><h2 id="cats-title">Shop by category</h2></div>
+        <ul class="cat-grid" role="list">
+        <li><a class="cat-tile" href="#collection" data-filter="Running">
+          <img src="assets/img/cloud-max-480.webp" width="480" height="502" alt="" loading="lazy" decoding="async">
+          <span class="cat-text"><strong>Running</strong><span>Road and everyday miles · 3 styles</span></span>
+        </a></li>
+        <li><a class="cat-tile" href="#collection" data-filter="Basketball">
+          <img src="assets/img/hardwood-high-480.webp" width="480" height="502" alt="" loading="lazy" decoding="async">
+          <span class="cat-text"><strong>Basketball</strong><span>Court-ready support · 2 styles</span></span>
+        </a></li>
+        <li><a class="cat-tile" href="#collection" data-filter="Training">
+          <img src="assets/img/sunrise-flex-480.webp" width="480" height="502" alt="" loading="lazy" decoding="async">
+          <span class="cat-text"><strong>Training</strong><span>Gym and cross-training · 2 styles</span></span>
+        </a></li>
+        <li><a class="cat-tile" href="#collection" data-filter="Lifestyle">
+          <img src="assets/img/urban-slate-480.webp" width="480" height="502" alt="" loading="lazy" decoding="async">
+          <span class="cat-text"><strong>Lifestyle</strong><span>Everyday comfort · 2 styles</span></span>
+        </a></li>
+        </ul>
+      </div>
+    </section>
 
-<div class="products" id="Products">
-    <h1>Products</h1>
-
-    <div class="box">
-        <div class="card">
-
-            <div class="small_card">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-share"></i>
-            </div>
-
-            <div class="image">
-                <img src="image/shoes1.png">
-            </div>
-
-            <div class="products_text">
-                <h2>NIKE</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-                <h3>$100.99</h3>
-                <div class="products_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <a href="#" class="btn">Add To Cart</a>
-            </div>
-
+    <section class="section section-tint" id="collection" aria-labelledby="collection-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="collection-title">The collection</h2>
+          <p>Prices are demo values in US dollars.</p>
         </div>
 
-        <div class="card">
-
-            <div class="small_card">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-share"></i>
-            </div>
-
-            <div class="image">
-                <img src="image/shoes2.png">
-            </div>
-
-            <div class="products_text">
-                <h2>NIKE</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-                <h3>$200.99</h3>
-                <div class="products_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <a href="#" class="btn">Add To Cart</a>
-            </div>
-
+        <div class="toolbar" role="search">
+          <div class="field search-field">
+            <label for="search">Search shoes</label>
+            <div class="input-wrap"><svg class="icon " viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="search" type="search" placeholder="Try &ldquo;runner&rdquo; or &ldquo;high&rdquo;" autocomplete="off"></div>
+          </div>
+          <div class="field sort-field">
+            <label for="sort">Sort by</label>
+            <select id="sort">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="name">Name: A to Z</option>
+            </select>
+          </div>
+        </div>
+        <div class="chips" role="group" aria-label="Filter by category">
+          <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="chip" data-filter="Running" aria-pressed="false">Running</button><button type="button" class="chip" data-filter="Basketball" aria-pressed="false">Basketball</button><button type="button" class="chip" data-filter="Training" aria-pressed="false">Training</button><button type="button" class="chip" data-filter="Lifestyle" aria-pressed="false">Lifestyle</button>
+          <button type="button" class="chip" data-filter="saved" aria-pressed="false">Saved</button>
         </div>
 
-        <div class="card">
-
-            <div class="small_card">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-share"></i>
+        <p class="result-count" id="result-count" role="status" aria-live="polite">Showing 9 of 9 styles</p>
+        <ul class="grid" id="grid" role="list">
+        <li class="card" data-id="aero-zoom" data-name="Aero Zoom 20" data-category="Running" data-price="139" data-order="0" data-details="Neutral road runner. Snug midfoot lacing, responsive cushioning and a bright volt outsole for low-light visibility." data-img="assets/img/aero-zoom.webp" data-alt="Navy and volt road running shoe, side view">
+          <div class="card-media">
+            <img src="assets/img/aero-zoom-480.webp" srcset="assets/img/aero-zoom-480.webp 480w, assets/img/aero-zoom.webp 688w" sizes="(min-width: 1100px) 22vw, (min-width: 640px) 44vw, 90vw" width="480" height="502" alt="Navy and volt road running shoe, side view" loading="lazy" decoding="async">
+            <button type="button" class="save" aria-pressed="false" aria-label="Save Aero Zoom 20"><svg class="icon " viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3 4.5 6.6 4.5c2 0 3.5 1 5.4 3 1.9-2 3.4-3 5.4-3 3.6 0 5.7 3.7 4.2 7.2C19.5 16.4 12 21 12 21z"/></svg></button>
+          </div>
+          <div class="card-body">
+            <p class="card-cat">Running</p>
+            <h3 class="card-title">Aero Zoom 20</h3>
+            <p class="card-blurb">Lightweight daily trainer with a breathable mesh upper.</p>
+            <div class="card-foot">
+              <p class="price"><span class="visually-hidden">Demo price </span>$139</p>
+              <button type="button" class="btn btn-ghost details-btn" aria-label="View details for Aero Zoom 20">Details</button>
             </div>
-
-            <div class="image">
-                <img src="image/shoes3.png">
+          </div>
+        </li>
+        <li class="card" data-id="court-gold" data-name="Court Gold Low" data-category="Basketball" data-price="129" data-order="1" data-details="Low-profile basketball shoe with a perforated upper for airflow and a high-traction black outsole." data-img="assets/img/court-gold.webp" data-alt="Gold low-top basketball shoe, side view">
+          <div class="card-media">
+            <img src="assets/img/court-gold-480.webp" srcset="assets/img/court-gold-480.webp 480w, assets/img/court-gold.webp 688w" sizes="(min-width: 1100px) 22vw, (min-width: 640px) 44vw, 90vw" width="480" height="502" alt="Gold low-top basketball shoe, side view" loading="lazy" decoding="async">
+            <button type="button" class="save" aria-pressed="false" aria-label="Save Court Gold Low"><svg class="icon " viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3 4.5 6.6 4.5c2 0 3.5 1 5.4 3 1.9-2 3.4-3 5.4-3 3.6 0 5.7 3.7 4.2 7.2C19.5 16.4 12 21 12 21z"/></svg></button>
+          </div>
+          <div class="card-body">
+            <p class="card-cat">Basketball</p>
+            <h3 class="card-title">Court Gold Low</h3>
+            <p class="card-blurb">Low-cut court shoe built for quick cuts.</p>
+            <div class="card-foot">
+              <p class="price"><span class="visually-hidden">Demo price </span>$129</p>
+              <button type="button" class="btn btn-ghost details-btn" aria-label="View details for Court Gold Low">Details</button>
             </div>
-
-            <div class="products_text">
-                <h2>NIKE</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-                <h3>$175.99</h3>
-                <div class="products_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <a href="#" class="btn">Add To Cart</a>
+          </div>
+        </li>
+        <li class="card" data-id="hardwood-high" data-name="Hardwood High" data-category="Basketball" data-price="159" data-order="2" data-details="Mid-to-high cut with a woven upper, bold lacing and a durable rubber outsole for indoor courts." data-img="assets/img/hardwood-high.webp" data-alt="Black and grey high-top basketball shoe, side view">
+          <div class="card-media">
+            <img src="assets/img/hardwood-high-480.webp" srcset="assets/img/hardwood-high-480.webp 480w, assets/img/hardwood-high.webp 688w" sizes="(min-width: 1100px) 22vw, (min-width: 640px) 44vw, 90vw" width="480" height="502" alt="Black and grey high-top basketball shoe, side view" loading="lazy" decoding="async">
+            <button type="button" class="save" aria-pressed="false" aria-label="Save Hardwood High"><svg class="icon " viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3 4.5 6.6 4.5c2 0 3.5 1 5.4 3 1.9-2 3.4-3 5.4-3 3.6 0 5.7 3.7 4.2 7.2C19.5 16.4 12 21 12 21z"/></svg></button>
+          </div>
+          <div class="card-body">
+            <p class="card-cat">Basketball</p>
+            <h3 class="card-title">Hardwood High</h3>
+            <p class="card-blurb">Knit high-top with a locked-in fit.</p>
+            <div class="card-foot">
+              <p class="price"><span class="visually-hidden">Demo price </span>$159</p>
+              <button type="button" class="btn btn-ghost details-btn" aria-label="View details for Hardwood High">Details</button>
             </div>
-
+          </div>
+        </li>
+        <li class="card" data-id="violet-stride" data-name="Violet Stride" data-category="Running" data-price="145" data-order="3" data-details="Supportive neutral runner with a plush heel, structured overlays and a vivid violet colourway." data-img="assets/img/violet-stride.webp" data-alt="Purple and blue running shoe, side view">
+          <div class="card-media">
+            <img src="assets/img/violet-stride-480.webp" srcset="assets/img/violet-stride-480.webp 480w, assets/img/violet-stride.webp 688w" sizes="(min-width: 1100px) 22vw, (min-width: 640px) 44vw, 90vw" width="480" height="502" alt="Purple and blue running shoe, side view" loading="lazy" decoding="async">
+            <button type="button" class="save" aria-pressed="false" aria-label="Save Violet Stride"><svg class="icon " viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3 4.5 6.6 4.5c2 0 3.5 1 5.4 3 1.9-2 3.4-3 5.4-3 3.6 0 5.7 3.7 4.2 7.2C19.5 16.4 12 21 12 21z"/></svg></button>
+          </div>
+          <div class="card-body">
+            <p class="card-cat">Running</p>
+            <h3 class="card-title">Violet Stride</h3>
+            <p class="card-blurb">Stable trainer for long steady miles.</p>
+            <div class="card-foot">
+              <p class="price"><span class="visually-hidden">Demo price </span>$145</p>
+              <button type="button" class="btn btn-ghost details-btn" aria-label="View details for Violet Stride">Details</button>
+            </div>
+          </div>
+        </li>
+        <li class="card" data-id="cloud-max" data-name="Cloud Max" data-category="Running" data-price="169" data-order="4" data-details="Cushion-first runner with a sculpted heel unit and a lightweight upper for easy recovery runs." data-img="assets/img/cloud-max.webp" data-alt="Light blue running shoe with a cushioned heel, side view">
+          <div class="card-media">
+            <img src="assets/img/cloud-max-480.webp" srcset="assets/img/cloud-max-480.webp 480w, assets/img/cloud-max.webp 688w" sizes="(min-width: 1100px) 22vw, (min-width: 640px) 44vw, 90vw" width="480" height="502" alt="Light blue running shoe with a cushioned heel, side view" loading="lazy" decoding="async">
+            <button type="button" class="save" aria-pressed="false" aria-label="Save Cloud Max"><svg class="icon " viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3 4.5 6.6 4.5c2 0 3.5 1 5.4 3 1.9-2 3.4-3 5.4-3 3.6 0 5.7 3.7 4.2 7.2C19.5 16.4 12 21 12 21z"/></svg></button>
+          </div>
+          <div class="card-body">
+            <p class="card-cat">Running</p>
+            <h3 class="card-title">Cloud Max</h3>
+            <p class="card-blurb">Maximum cushioning with a visible air unit.</p>
+            <div class="card-foot">
+              <p class="price"><span class="visually-hidden">Demo price </span>$169</p>
+              <button type="button" class="btn btn-ghost details-btn" aria-label="View details for Cloud Max">Details</button>
+            </div>
+          </div>
+        </li>
+        <li class="card" data-id="urban-slate" data-name="Urban Slate" data-category="Lifestyle" data-price="119" data-order="5" data-details="Sock-like lifestyle sneaker with a cage overlay and a clean white midsole that works with everything." data-img="assets/img/urban-slate.webp" data-alt="Grey lifestyle sneaker with a white sole, side view">
+          <div class="card-media">
+            <img src="assets/img/urban-slate-480.webp" srcset="assets/img/urban-slate-480.webp 480w, assets/img/urban-slate.webp 688w" sizes="(min-width: 1100px) 22vw, (min-width: 640px) 44vw, 90vw" width="480" height="502" alt="Grey lifestyle sneaker with a white sole, side view" loading="lazy" decoding="async">
+            <button type="button" class="save" aria-pressed="false" aria-label="Save Urban Slate"><svg class="icon " viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3 4.5 6.6 4.5c2 0 3.5 1 5.4 3 1.9-2 3.4-3 5.4-3 3.6 0 5.7 3.7 4.2 7.2C19.5 16.4 12 21 12 21z"/></svg></button>
+          </div>
+          <div class="card-body">
+            <p class="card-cat">Lifestyle</p>
+            <h3 class="card-title">Urban Slate</h3>
+            <p class="card-blurb">Slip-in comfort in a neutral grey.</p>
+            <div class="card-foot">
+              <p class="price"><span class="visually-hidden">Demo price </span>$119</p>
+              <button type="button" class="btn btn-ghost details-btn" aria-label="View details for Urban Slate">Details</button>
+            </div>
+          </div>
+        </li>
+        <li class="card" data-id="sunrise-flex" data-name="Sunrise Flex" data-category="Training" data-price="99" data-order="6" data-details="Flexible forefoot and a breathable mesh upper make this an easy choice for gym sessions and short runs." data-img="assets/img/sunrise-flex.webp" data-alt="Orange training shoe with a white sole, side view">
+          <div class="card-media">
+            <img src="assets/img/sunrise-flex-480.webp" srcset="assets/img/sunrise-flex-480.webp 480w, assets/img/sunrise-flex.webp 688w" sizes="(min-width: 1100px) 22vw, (min-width: 640px) 44vw, 90vw" width="480" height="502" alt="Orange training shoe with a white sole, side view" loading="lazy" decoding="async">
+            <button type="button" class="save" aria-pressed="false" aria-label="Save Sunrise Flex"><svg class="icon " viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3 4.5 6.6 4.5c2 0 3.5 1 5.4 3 1.9-2 3.4-3 5.4-3 3.6 0 5.7 3.7 4.2 7.2C19.5 16.4 12 21 12 21z"/></svg></button>
+          </div>
+          <div class="card-body">
+            <p class="card-cat">Training</p>
+            <h3 class="card-title">Sunrise Flex</h3>
+            <p class="card-blurb">Flexible gym shoe in bright orange.</p>
+            <div class="card-foot">
+              <p class="price"><span class="visually-hidden">Demo price </span>$99</p>
+              <button type="button" class="btn btn-ghost details-btn" aria-label="View details for Sunrise Flex">Details</button>
+            </div>
+          </div>
+        </li>
+        <li class="card" data-id="retro-pulse" data-name="Retro Pulse" data-category="Lifestyle" data-price="149" data-order="7" data-details="Classic cushioned profile with contrast panels in black, white and signal red." data-img="assets/img/retro-pulse.webp" data-alt="Black, white and red retro sneaker, side view">
+          <div class="card-media">
+            <img src="assets/img/retro-pulse-480.webp" srcset="assets/img/retro-pulse-480.webp 480w, assets/img/retro-pulse.webp 688w" sizes="(min-width: 1100px) 22vw, (min-width: 640px) 44vw, 90vw" width="480" height="502" alt="Black, white and red retro sneaker, side view" loading="lazy" decoding="async">
+            <button type="button" class="save" aria-pressed="false" aria-label="Save Retro Pulse"><svg class="icon " viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3 4.5 6.6 4.5c2 0 3.5 1 5.4 3 1.9-2 3.4-3 5.4-3 3.6 0 5.7 3.7 4.2 7.2C19.5 16.4 12 21 12 21z"/></svg></button>
+          </div>
+          <div class="card-body">
+            <p class="card-cat">Lifestyle</p>
+            <h3 class="card-title">Retro Pulse</h3>
+            <p class="card-blurb">Heritage-inspired silhouette with bold colour blocking.</p>
+            <div class="card-foot">
+              <p class="price"><span class="visually-hidden">Demo price </span>$149</p>
+              <button type="button" class="btn btn-ghost details-btn" aria-label="View details for Retro Pulse">Details</button>
+            </div>
+          </div>
+        </li>
+        <li class="card" data-id="trail-shield" data-name="Trail Shield" data-category="Training" data-price="135" data-order="8" data-details="Water-resistant style upper and a grippy outsole for wet pavement, park paths and cross-training." data-img="assets/img/trail-shield.webp" data-alt="Dark grey weather-ready training shoe with blue laces, side view">
+          <div class="card-media">
+            <img src="assets/img/trail-shield-480.webp" srcset="assets/img/trail-shield-480.webp 480w, assets/img/trail-shield.webp 688w" sizes="(min-width: 1100px) 22vw, (min-width: 640px) 44vw, 90vw" width="480" height="502" alt="Dark grey weather-ready training shoe with blue laces, side view" loading="lazy" decoding="async">
+            <button type="button" class="save" aria-pressed="false" aria-label="Save Trail Shield"><svg class="icon " viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3 4.5 6.6 4.5c2 0 3.5 1 5.4 3 1.9-2 3.4-3 5.4-3 3.6 0 5.7 3.7 4.2 7.2C19.5 16.4 12 21 12 21z"/></svg></button>
+          </div>
+          <div class="card-body">
+            <p class="card-cat">Training</p>
+            <h3 class="card-title">Trail Shield</h3>
+            <p class="card-blurb">Weather-ready shoe with a protective upper.</p>
+            <div class="card-foot">
+              <p class="price"><span class="visually-hidden">Demo price </span>$135</p>
+              <button type="button" class="btn btn-ghost details-btn" aria-label="View details for Trail Shield">Details</button>
+            </div>
+          </div>
+        </li>
+        </ul>
+        <div class="empty" id="empty" hidden>
+          <p><strong>No shoes match your search.</strong></p>
+          <p>Try a different word or clear the filters.</p>
+          <button type="button" class="btn btn-secondary" id="reset">Clear filters</button>
         </div>
+      </div>
+    </section>
 
-        <div class="card">
-
-            <div class="small_card">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-share"></i>
-            </div>
-
-            <div class="image">
-                <img src="image/shoes4.png">
-            </div>
-
-            <div class="products_text">
-                <h2>NIKE</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-                <h3>$120.99</h3>
-                <div class="products_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <a href="#" class="btn">Add To Cart</a>
-            </div>
-
+    <section class="section" id="featured" aria-labelledby="featured-title">
+      <div class="container featured">
+        <div class="featured-gallery">
+          <div class="featured-stage"><img id="featured-img" src="assets/img/everyday-1.webp" width="800" height="562" alt="Everyday Trainer, three-quarter view" loading="lazy" decoding="async"></div>
+          <ul class="thumbs" role="list" aria-label="Everyday Trainer views"><li><button type="button" class="thumb" data-src="assets/img/everyday-1.webp" data-alt="Everyday Trainer, three-quarter view" aria-pressed="true" aria-label="Everyday Trainer, three-quarter view"><img src="assets/img/everyday-1-thumb.webp" width="160" height="112" alt=""></button></li><li><button type="button" class="thumb" data-src="assets/img/everyday-2.webp" data-alt="Everyday Trainer, front and heel" aria-pressed="false" aria-label="Everyday Trainer, front and heel"><img src="assets/img/everyday-2-thumb.webp" width="160" height="112" alt=""></button></li><li><button type="button" class="thumb" data-src="assets/img/everyday-3.webp" data-alt="Everyday Trainer, heel and sole" aria-pressed="false" aria-label="Everyday Trainer, heel and sole"><img src="assets/img/everyday-3-thumb.webp" width="160" height="112" alt=""></button></li><li><button type="button" class="thumb" data-src="assets/img/everyday-4.webp" data-alt="Everyday Trainer, side view" aria-pressed="false" aria-label="Everyday Trainer, side view"><img src="assets/img/everyday-4-thumb.webp" width="160" height="112" alt=""></button></li></ul>
         </div>
-
-        <div class="card">
-
-            <div class="small_card">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-share"></i>
-            </div>
-
-            <div class="image">
-                <img src="image/shoes5.png">
-            </div>
-
-            <div class="products_text">
-                <h2>NIKE</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-                <h3>$150.99</h3>
-                <div class="products_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <a href="#" class="btn">Add To Cart</a>
-            </div>
-
+        <div class="featured-copy">
+          <p class="eyebrow">Featured</p>
+          <h2 id="featured-title">Everyday Trainer</h2>
+          <p class="lead">A black and red all-rounder for commutes, errands and easy runs. Select a thumbnail to see it from every angle.</p>
+          <dl class="specs">
+            <div><dt>Best for</dt><dd>Daily wear and easy runs</dd></div>
+            <div><dt>Upper</dt><dd>Breathable engineered mesh</dd></div>
+            <div><dt>Sole</dt><dd>Speckled foam midsole, grippy rubber outsole</dd></div>
+            <div><dt>Demo price</dt><dd>$89</dd></div>
+          </dl>
+          <p class="note">Display only in this demo. Ordering is not available.</p>
         </div>
+      </div>
+    </section>
 
-        <div class="card">
-
-            <div class="small_card">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-share"></i>
-            </div>
-
-            <div class="image">
-                <img src="image/shoes6.png">
-            </div>
-
-            <div class="products_text">
-                <h2>NIKE</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-                <h3>$220.99</h3>
-                <div class="products_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star-half-stroke"></i>
-                </div>
-                <a href="#" class="btn">Add To Cart</a>
-            </div>
-
+    <section class="promo" aria-labelledby="promo-title">
+      <div class="container promo-inner">
+        <div>
+          <h2 id="promo-title">Not sure where to start?</h2>
+          <p>Most of the collection is built for running. Start with the road edit and narrow it down from there.</p>
         </div>
+        <a class="btn btn-light" href="#collection" data-filter="Running">Browse running shoes <svg class="icon i-sm" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      </div>
+    </section>
 
-        <div class="card">
+    <section class="section" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head"><h2 id="why-title">Why shop Stride</h2><p>Illustrative store policies for the concept.</p></div>
+        <ul class="benefits" role="list">
+          <li><svg class="icon " viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg><h3>Simple shipping</h3><p>Concept policy: free standard shipping on orders over $150.</p></li>
+          <li><svg class="icon " viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 9h11a5 5 0 0 1 0 10H8"/><path d="m8 5-4 4 4 4"/></svg><h3>Easy returns</h3><p>Concept policy: a 30-day window to return unworn pairs.</p></li>
+          <li><svg class="icon " viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 16 16 3l5 5L8 21z"/><path d="m7 12 2.5 2.5M10 9l2.5 2.5M13 6l2.5 2.5"/></svg><h3>Fit guidance</h3><p>Concept feature: size notes on every product so you can choose with confidence.</p></li>
+          <li><svg class="icon " viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4z"/></svg><h3>Helpful support</h3><p>Concept feature: a real person to answer sizing and care questions.</p></li>
+        </ul>
+      </div>
+    </section>
 
-            <div class="small_card">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-share"></i>
-            </div>
-
-            <div class="image">
-                <img src="image/shoes.png">
-            </div>
-
-            <div class="products_text">
-                <h2>NIKE</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-                <h3>$110.99</h3>
-                <div class="products_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <a href="#" class="btn">Add To Cart</a>
-            </div>
-
+    <section class="section section-tint" id="newsletter" aria-labelledby="news-title">
+      <div class="container news">
+        <div>
+          <h2 id="news-title">Stay in the loop</h2>
+          <p>Try the signup form. This is a demo, so your address is validated in the browser and never stored or sent.</p>
         </div>
-
-        <div class="card">
-
-            <div class="small_card">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-share"></i>
-            </div>
-
-            <div class="image">
-                <img src="image/shoes7.png">
-            </div>
-
-            <div class="products_text">
-                <h2>NIKE</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-                <h3>$150.99</h3>
-                <div class="products_star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star-half-stroke"></i>
-                </div>
-                <a href="#" class="btn">Add To Cart</a>
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-<!--About-->
-
-<div class="about" id="About">
-        
-    <h1>Web<span>About</span></h1>
-
-    <div class="about_main">
-        <div class="about_image">
-            <div class="about_small_image">
-                <img src="image/red_shoes1.png" onclick="functio(this)">
-                <img src="image/red_shoes2.png" onclick="functio(this)">
-                <img src="image/red_shoes3.png" onclick="functio(this)">
-                <img src="image/red_shoes4.png" onclick="functio(this)">
-            </div>
-
-            <div class="image_contaner">
-                <img src="image/red_shoes1.png" id="imagebox">
-            </div>
-
-        </div>
-        <div class="about_text">
-            <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical 
-                Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at 
-                Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a 
-                Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the 
-                undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" 
-                (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, 
-                very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes 
-                from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below 
-                for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also 
-                reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-            </p>
-        </div>
-
-    </div>
-
-    <a href="#" class="about_btn">Shop Now</a>
-
-    <script>
-        function functio(small){
-            var full = document.getElementById("imagebox")
-            full.src = small.src
-        }
-    </script>
-    
-</div>
-
-<!--Review-->
-
-<div class="review" id="Review">
-    <h1>Customer's<span>review</span></h1>
-    
-    <div class="review_box">
-        <div class="review_card">
-            <div class="card_top">
-                <div class="profile">
-
-                    <div class="profile_image">
-                        <img src="image/girl_dp1.jpg">
-                    </div>
-
-                    <div class="name">
-                        <strong>Ranidi Lochana</strong>
-
-                        <div class="like">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="comment">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                    architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                    repellat numquam atque dolores!
-                </p>
-            </div>
-        </div>   
-
-        <div class="review_card">
-            <div class="card_top">
-                <div class="profile">
-
-                    <div class="profile_image">
-                        <img src="image/man_dp1.jpg">
-                    </div>
-
-                    <div class="name">
-                        <strong>Sayuru Tharanga</strong>
-
-                        <div class="like">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="comment">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                    architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                    repellat numquam atque dolores!
-                </p>
-            </div>
-        </div>   
-
-        <div class="review_card">
-            <div class="card_top">
-                <div class="profile">
-
-                    <div class="profile_image">
-                        <img src="image/man_dp2.jpg">
-                    </div>
-
-                    <div class="name">
-                        <strong>Senuda Dilwan</strong>
-
-                        <div class="like">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="comment">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                    architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                    repellat numquam atque dolores!
-                </p>
-            </div>
-        </div>   
-
-    </div>
-
-    <div class="review_box">
-        <div class="review_card">
-            <div class="card_top">
-                <div class="profile">
-
-                    <div class="profile_image">
-                        <img src="image/gir_dp3.jpg">
-                    </div>
-
-                    <div class="name">
-                        <strong>Kaveesha Vidurangi</strong>
-
-                        <div class="like">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="comment">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                    architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                    repellat numquam atque dolores!
-                </p>
-            </div>
-        </div>   
-
-        <div class="review_card">
-            <div class="card_top">
-                <div class="profile">
-
-                    <div class="profile_image">
-                        <img src="image/gir_dp2.jpg">
-                    </div>
-
-                    <div class="name">
-                        <strong>John Deo</strong>
-
-                        <div class="like">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="comment">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                    architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                    repellat numquam atque dolores!
-                </p>
-            </div>
-        </div>   
-
-        <div class="review_card">
-            <div class="card_top">
-                <div class="profile">
-
-                    <div class="profile_image">
-                        <img src="image/man_dp3.jpg">
-                    </div>
-
-                    <div class="name">
-                        <strong>Charith Aruna</strong>
-
-                        <div class="like">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="comment">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                    architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                    repellat numquam atque dolores!
-                </p>
-            </div>
-        </div>   
-
-    </div>
-
-</div>
-
-
-<!--Services-->
-<div class="services" id="Servises">
-    <h1>our<span>services</span></h1>
-
-    <div class="services_cards">
-        <div class="services_box">
-            <i class="fa-solid fa-truck-fast"></i>
-            <h3>Fast Delivery</h3>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            </p>
-        </div>
-
-        <div class="services_box">
-            <i class="fa-solid fa-rotate-left"></i>
-            <h3>10 Days Replacement</h3>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            </p>
-        </div>
-
-        <div class="services_box">
-            <i class="fa-solid fa-headset"></i>
-            <h3>24 x 7 Support</h3>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            </p>
-        </div>
-    </div>
-
-</div>
-
- <!--Login Form-->
-    
- <div class="login_form">
-    <div class="left">
-        <img src="image/logshoes.png">
-    </div>
-
-    <div class="right">
-        <h1>Welcome Back!</h1>
-
-        <form action="#" method="post">
-            <p>User Name</p>
-            <div class="user">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" name="user" placeholder="User Name" class="username">
-            </div>
-
-            <p class="passworg_tag">Password</p>
-            <div class="password">
-                <i class="fa-solid fa-lock"></i>
-                <input type="text" name="password" placeholder="Password">
-            </div>
-
-            <p class="forget">Forget Password ?</p>
-
-            <button type="submit">Login</button>
-            <div class="loging_icon">
-                <a href="#"><img src="image/google.png"></a>
-                <a href="#"><img src="image/facebook.png"></a>
-                <a href="#"><img src="image/twitter.png"></a>
-            </div>
-
+        <form class="news-form" id="news-form" novalidate>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="news-msg">
+          </div>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+          <p id="news-msg" class="form-msg" role="status" aria-live="polite"></p>
         </form>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <p class="brand brand-footer">Stride<span aria-hidden="true">.</span></p>
+        <p class="footer-note">A frontend storefront concept built with HTML, CSS and JavaScript. It has no backend and processes no orders.</p>
+      </div>
+      <div>
+        <h2 class="footer-h">Explore</h2>
+        <ul role="list">
+          <li><a href="#collection">Shop</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#why">Why Stride</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-h">Contact</h2>
+        <ul role="list">
+          <li><a href="mailto:hello@example.com"><svg class="icon i-sm" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> hello@example.com</a></li>
+          <li><a href="https://github.com/MohammedSZD/shop-site" rel="noopener"><svg class="icon i-sm" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg> Source on GitHub</a></li>
+        </ul>
+        <p class="footer-small">The email address is a placeholder.</p>
+      </div>
     </div>
-
-</div>
-
-
-
-<!--Footer-->
-
-<footer>
-    <div class="footer_main">
-        <div class="tag">
-            <h1>Contact</h1>
-            <a href="#"><i class="fa-solid fa-house"></i>123/istanbul/Turkey</a>
-            <a href="#"><i class="fa-solid fa-phone"></i>+90 543 522 22 36</a>
-            <a href="#"><i class="fa-solid fa-envelope"></i>mohammed@gmail.com</a>
-        </div>
-
-        <div class="tag">
-            <h1>Get Help</h1>
-            <a href="#" class="center">FAQ</a>
-            <a href="#" class="center">Shipping</a>
-            <a href="#" class="center">Returns</a>
-            <a href="#" class="center">Payment Options</a>
-        </div>
-
-        <div class="tag">
-            <h1>Our Stores</h1>
-            <a href="#" class="center">Turkey</a>
-            <a href="#" class="center">USA</a>
-            <a href="#" class="center">palestine</a>
-            <a href="#" class="center">Egypt</a>
-        </div>
-
-        <div class="tag">
-            <h1>Follw Us</h1>
-            <div class="social_link">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>                    
-            </div>
-        </div>
-
-     <div class="tag">
-            <h1>Newsletter</h1>
-            <div class="search_bar">
-                <input type="text" placeholder="You email id here">
-                <button type="submit">Subscribe</button>
-            </div>
-        </div>
-
+    <div class="container footer-legal">
+      <p>Demo project. Product photography is carried over from the original version of this project for illustration only and belongs to its respective owners. Replace it before any real use.</p>
     </div>
-    </footer>
+  </footer>
 
-
-
+  <dialog id="details" aria-labelledby="d-title">
+    <div class="d-inner">
+      <button type="button" class="d-close" aria-label="Close details"><svg class="icon " viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      <div class="d-media"><img id="d-img" src="assets/img/aero-zoom.webp" alt="" width="688" height="719"></div>
+      <div class="d-body">
+        <p class="card-cat" id="d-cat"></p>
+        <h2 id="d-title"></h2>
+        <p class="price" id="d-price"></p>
+        <p id="d-text"></p>
+        <p class="note">Demo only. Ordering is not available in this concept.</p>
+        <button type="button" class="btn btn-secondary d-save" aria-pressed="false">Save for later</button>
+      </div>
+    </div>
+  </dialog>
+  <noscript><p class="demo-bar">JavaScript is needed for search, filtering, saving and the product details view.</p></noscript>
 </body>
 </html>
